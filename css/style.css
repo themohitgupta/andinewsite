@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightcyan;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.nav-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    height: 100%;
+}
+
+.nav-item {
+    margin: 10px;
+    align-self: center;
+    font-size: 17.5px;
+    font-weight: 500;
+}
+
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-button .bar {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-size: large;
+}
+
+section {
+    padding: 25px 50px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+footer h1, footer h2, footer h3 {
+    background: #1f2937;
+    color: #fff;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+.footer-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu, .overview, .social {
+    text-align: left;
+}
+
+.menu ul, .overview ul, .social ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu a, .overview a, .social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for the Back to Top button */
+.back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.back-to-top-button::before {
+    content: "▲";
+    font-size: 24px;
+}
+
+back-to-top-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .nav-bar {
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .site-title {
+        display: none;
+    }
+
+    /* Style for the mobile menu */
+    #navbar-multi-level {
+        display: none;
+    }
+
+    #navbar-multi-level.active {
+        display: block;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+    }
+
+    .footer-menu {
+        padding: 20px 0;
+    }
+
+    .menu, .overview, .social {
+        text-align: center;
+    }
+
+    .menu ul, .overview ul, .social ul {
+        padding-left: 0;
+    }
+
+    .menu a, .overview a, .social a {
+        font-size: 12px;
+    }
+
+    .social img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .flex.items-center {
+        flex-direction: row;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: center;
+    }
+
+    .flex.space-x-4 {
+        margin-top: 1rem;
+    }
+}
+
+
+/* Custom CSS for responsive and creative cards */
+.software-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.software-card:hover {
+    transform: scale(1.02);
+}
+
+.software-card-image {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.software-card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+}
+
+.software-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.software-card-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.software-card-description.full {
+    overflow: visible;
+}
+
+.software-card-description-scroll {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.software-card-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <title>ANDI Software Solutions</title>
+    </head>
+<body>
+    <header>
+        <!-- section 1 navbar start here -->
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="index.html" class="flex items-center">
+                  <img src="assets/logo-removebg-preview.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white mobile-hide"></span>
+              </a>
+            
+              <!-- menu buttons -->
+              <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                  </li>
+    
+                  <li>
+                    <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#cloud" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Cloud Software</a>
+                  </li>
+                  <li>
+                    <a href="#footer" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button> 
+            </div>
+          </nav>
+        </header>
+    <!-- section 1 navbar end here -->
+    <img class="mt-4 space-y-4" src="assets/banner1.png" alt="banner1">
+
+    <section id="cloud" id="cloud" class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="software-card">
+            <img src="assets/cloud/ANDI AMC.jpg" alt="ANDI AMC" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI AMC</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Suitable for all kinds of service providers for managing/record-keeping of their annual maintenance contracts online with a detailed customer and service database.</p>
+                </div>
+                <p class="software-card-price">List Price: INR 25,200 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI Barcode.jpg" alt="ANDI Barcode" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI Barcode</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Easy cloud base generation and printing of barcode suitable for any kind of products.</p>
+                </div>
+                <p class="software-card-price">List Price : INr 7,200 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI Business ERP.jpg" alt="ANDI Business ERP" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI Business ERP</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Advanced business ERP to manage Multiple business & Multiple location warehouses efficiently. It has powerful user and role management module with adanced product management functions. Its inbuilt Contacts management module for customers as well as suppliers supports Purchase, Sales and Expense management with payment alerts. This ERP is equiped with Tax / tax groups function and have customize invoice & product labels priniting options with details report generation. This Business ERP is must for growing organisations.</p>
+                </div>
+                <p class="software-card-price">List Price: INR 43,200 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI Call Center.jpg" alt="ANDI Call Centre" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI Call Centre</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Advanced call center management portal covering all major activitites to run call center operations.</p>
+                </div>
+                <p class="software-card-price">List Price: INR 32,400 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI Courier.jpg" alt="ANDI Courier" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI Courier</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Software designed for courier companies to monitor the logistics of storage and handling of cargo from its booking till final destination efficiently.</p>
+                </div>
+                <p class="software-card-price">List Price: INR 18,000 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI Crowd Funding.jpg" alt="ANDI Crowd Funding" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI Crowd Funding</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Software to manage online crowd funding functions like donation, Charity funding, Bidding, etc</p>
+                </div>
+                <p class="software-card-price">List Price: INR 28,000 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI dVC1.jpg" alt="ANDI dVC1" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI dVC1</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Mini static website or Simple online profile maker with all details like social icons, contact details, profile, portal, business activities etc at home page & appointment booking option as per availability. This is suitable for all kind of business / persons from doctors to job seekers.</p>
+                </div>
+                <p class="software-card-price">List Price: INR 27,000 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI dVC2.jpg" alt="ANDI dVC2" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI dVC2</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Software for making Online profiles (dVC card) with photo, location, social media links and contact details. In addition, the cards has integrated organic visiter count, product display section and order booking with payment option using PayTM / GooglePay or Phonepay account links. End card users can add/modify products online in his card including the product name, photos, price, tax and video links etc. These cards gives flexibility of E-Com function with complete business cycle from display + pricing + ordering + payment in it !!</p>
+                </div>
+                <p class="software-card-price">List Price: INR 36,000 + GST</p>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <img src="assets/cloud/ANDI dVC3.jpg" alt="ANDI dVC3" class="software-card-image">
+            <div class="software-card-content">
+                <div class="software-card-title">ANDI dVC3</div>
+                <div class="software-card-description-scroll">
+                <p class="software-card-description">Basic single page online profile maker (digital business card) with clickable links for phone number, whatsapp, email, website and social media links. User can change its design templete by himself online to give fresh look everytime - suitable for all kind of persons.</p>
+                </div>
+                <p class="software-card-price">List Price: INR 27,000 + GST</p>
+            </div>
+        </div>
+
+        <!-- Add more software entries following the same structure -->
+
+
+    </section>
+
+    <!-- footer section -->
+<footer id="footer" class="mt-4 space-y-4 bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="assets/logo-removebg-preview.png" alt="ANDI Software Logo" class="w-10 h-10">
+            <p class="text-sm ml-2">ANDI Software Solutions</p>
+            <p class="text-sm ml-2 opacity-75">Panipat & Noida</p>
+        </div>
+        <div class="flex space-x-4">
+            <div class="text-left">
+                <h2 class="text-lg font-semibold">Menu</h2>
+                <ul>
+                    <li><a href="index.html" class="text-blue-300 hover:text-blue-500">Home</a></li>
+                    <li><a href="index.html" class="text-blue-300 hover:text-blue-500">About Us</a></li>
+                    <li><a href="#could" class="text-blue-300 hover:text-blue-500">Cloud Software</a></li>
+                    <li><a href="#footer" class="text-blue-300 hover:text-blue-500">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="text-left">
+                <h2 class="text-lg font-semibold">Overview</h2>
+                <ul>
+                    <li><a href="#" class="text-blue-300 hover:text-blue-500">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-blue-300 hover:text-blue-500">Privacy Policy</a></li>
+                    <li><a href="#" class="text-blue-300 hover:text-blue-500">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="text-left">
+                <h2 class="text-lg font-semibold">Social Media</h2>
+                <div class="flex space-x-2 items-center">
+                    <a href="https://www.facebook.com/people/Andi-Software-Solutions/100065172963303/" target="_blank"><img src="assets/fb.svg" alt="Facebook" class="w-5 h-5"></a>
+                    <a href="https://www.instagram.com/andisoftwaresolutions5/?hl=en" target="_blank"><img src="assets/ig.svg" alt="Instagram" class="w-5 h-5"></a>
+                    <a href="https://www.youtube.com/channel/UC0mfGwSDteVVWqmggE3MtYQ" target="_blank"><img src="assets/youtube.svg" alt="YouTube" class="w-5 h-5"></a>
+                    <a href="https://www.linkedin.com/company/andisoftwaresolutions/" target="_blank"><img src="assets/linked-in.svg" alt="LinkedIn" class="w-5 h-5"></a>
+                    <a href="https://wa.me/+917015574125" target="_blank"><img src="assets/whatsapp.svg" alt="whatsApp" class="w-5 h-5"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center text-sm opacity-75">
+        &copy; 2023 ANDi Software Solutions. All Rights Reserved.
+    </div>
+</footer>
+
+<!-- backtotop -->
+    <!-- Back to Top button with arrow icon -->
+    <button id="backToTopBtn" class="back-to-top-button" onclick="scrollToTop()"></button>
+
+<!-- js -->
+<script src="js/back_to_top.js"></script>
+<script>
+    function toggleMobileMenu() {
+        var menu = document.getElementById('navbar-multi-level');
+        menu.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
